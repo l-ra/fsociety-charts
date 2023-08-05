@@ -63,7 +63,7 @@ spec:
           env:
             - name: USELESS_ENV_VAR_FOR_HELM
               value: "making_templating_easier"
-          {{- if .Values.gotosocial.db.sqliteTmpdir }}
+          {{- if .Values.gotosocial.config.db.sqliteTmpdir }}
             - name: SQLITE_TMPDIR
               value: {{- .Values.gotosocial.config.db.sqliteTmpdir }}
           {{- end }}
