@@ -8,6 +8,32 @@ entries:
           image: superseriousbusiness/gotosocial:0.20.0
     apiVersion: v2
     appVersion: 0.10.0
+    created: "2023-08-05T19:15:16.282297924Z"
+    dependencies:
+    - condition: postgresql.enabled
+      name: postgresql
+      repository: https://charts.bitnami.com/bitnami
+      version: ~11.9.13
+    description: A Helm chart for Kubernetes to Deploy GoToSocial
+    digest: 86c92c0e996b5d892986493887531b762abb02a397c7947a4b8e3ca1137bdf37
+    home: https://github.com/superseriousbusiness/gotosocial
+    icon: https://docs.gotosocial.org/en/latest/assets/sloth.png
+    maintainers:
+    - email: dev@fsociety.social
+      name: fSocietySocial
+      url: https://fsociety.social
+    name: gotosocial
+    type: application
+    urls:
+    - https://github.com/l-ra/fsociety-charts/releases/download/gotosocial-0.4.9-lra5/gotosocial-0.4.9-lra5.tgz
+    version: 0.4.9-lra5
+  - annotations:
+      artifacthub.io/containsSecurityUpdates: "false"
+      artifacthub.io/images: |-
+        - name: gotosocial
+          image: superseriousbusiness/gotosocial:0.20.0
+    apiVersion: v2
+    appVersion: 0.10.0
     created: "2023-08-05T19:09:45.755701568Z"
     dependencies:
     - condition: postgresql.enabled
@@ -53,4 +79,4 @@ entries:
     urls:
     - https://github.com/l-ra/fsociety-charts/releases/download/gotosocial-0.4.9-lra3/gotosocial-0.4.9-lra3.tgz
     version: 0.4.9-lra3
-generated: "2023-08-05T19:09:45.755717368Z"
+generated: "2023-08-05T19:15:16.282317024Z"
